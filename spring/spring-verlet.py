@@ -16,7 +16,7 @@ t_array = np.arange(0, t_max, dt)
 x_list = []
 v_list = []
 
-# Euler integration
+# Verlet integration
 for t in t_array:
 
     # append current state to trajectories
@@ -24,7 +24,7 @@ for t in t_array:
     v_list.append(v)
 
     if t == 0:
-        # calculate using euler method in the first iteration as there is no previous iteration
+        # calculate using verlet method in the first iteration as there is no previous iteration
         a = -k * x / m
         x = x + dt * v
         v = v + dt * a
