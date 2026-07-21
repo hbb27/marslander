@@ -1,6 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""
+ Note for Assignment 3: the program took 0.505s in real time
+ In the time measurement, I have removed the plotting function 
+ for a more realistic comparison against c++ code
+"""
+
 # mass, spring constant, initial position and velocity
 m = 1
 k = 1
